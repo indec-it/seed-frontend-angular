@@ -1,0 +1,70 @@
+	// MY ACCOUNT
+#myAccount {
+	.card {
+		padding: 30px;
+		display: inline-block;
+		box-shadow: 0 1px 5px #eee;
+		border:1px solid #efefef;
+		width: 100%;
+	}
+	.name h4{
+		display: inline;
+		margin-right: 10px;
+	}
+	.title {
+		margin-bottom: 10px;
+		color: @gray;
+	}
+	.pic img {
+		max-width: 80px;
+		display: inline;
+		border: 1px solid @gray-soft;
+		margin-right: 5px;
+	}
+	.pic .action {
+		display: inline-block;
+	}
+	h5 {
+		margin-bottom: 5px;
+	}
+
+	.calification i:before {
+		font-size: 25px;
+		color: #fad961;
+		color: -moz-linear-gradient(top,  #fad961 0%, #f7b81c 100%);
+		color: -webkit-linear-gradient(top,  #fad961 0%,#f7b81c 100%);
+		color: linear-gradient(to bottom,  #fad961 0%,#f7b81c 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad961', endColorstr='#f7b81c',GradientType=0 );
+	}
+	.plans { // TABLE PLANS
+
+	}
+	.plans th {
+		padding: 25px 0px;
+	}
+	.plans td {
+		vertical-align: middle;
+	}
+	.plans td.text-center {
+		color:@gray;
+	}
+	.plans i {
+		font-weight: bolder;
+	}
+	.pay-options label, .shipping label {
+		margin-right: 30px;
+	}
+	.shipping #shipping-method {
+		margin-top: 10px;
+	}
+	.shipping #shipping-method label{
+		display: block
+	}
+}
+
+
+@media (max-width: @responsive-width) {
+	.info-third  {
+		margin-left: 0px;
+	}
+}

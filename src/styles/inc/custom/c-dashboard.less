@@ -1,0 +1,149 @@
+#dashboard {
+	.card {
+		margin: 0px 10px 20px 10px;
+		display: inline-block;
+		box-shadow: 0 1px 5px #eee;
+		border:1px solid #efefef;
+		width: 100%;
+	}
+	.card-title {
+		padding: 25px 27px;
+		margin: 0;
+		line-height: 100%;
+		font-size: 17px;
+		font-weight: 400;
+		background-color: @gray-soft;
+	}
+	.card-title small {
+		font-style: italic;
+		color: @gray;
+	}
+	.full-width {
+		width: 100%;
+	}
+	.more a{
+		display: block;
+		padding: 10px 10px 11px;
+		line-height: 100%;
+		font-size: 11px;
+		margin-top: 20px;
+		text-transform: uppercase;
+		color: @color;
+		text-align: center;
+	}
+	.more a:hover {
+		background-color: @gray-soft;
+	}
+	.table {
+		padding:0px 20px;
+	}
+}
+
+// STATICS
+#dashboard {
+	.hardcode-graph {
+		background-image: url("../img/dashboard/chart.jpg");
+		height: 273px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.mini-card {
+		text-align: right;
+		padding: 10px 15px;
+		border-bottom: 1px dotted #777;
+
+		.title {
+			overflow: hidden;
+			color: #aeaeae;
+		}
+		.count {
+			overflow: hidden;
+			color: #fff;
+			font-size: 20px;
+		}
+
+	}
+}
+
+// CALIFICATION LIST
+#dashboard {
+	.card .calification-list {
+		
+		a:hover {
+			background-color: @gray-soft;
+		}
+		.field {
+			list-style: none;
+			display: inline-block;
+			min-width: 100%;
+			padding: 15px 23px;
+		}
+		.user-img {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.user-img img{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			vertical-align: sub;
+		}
+		.info {
+			display: inline-block;
+			vertical-align: super;
+		}
+		.info .name {
+			font-weight: 700;
+		}
+		.info .item {
+			color: #8E8E8E;
+		}
+	}
+}
+
+// SPECIAL EVENTS
+#dashboard {
+	.special-events {
+
+		.event {
+			text-align: right;
+			padding: 10px 15px;
+			border-bottom: 1px dotted lighten(@gray-dark, 15%);
+
+			.date {
+				overflow: hidden;
+				color: @white;
+			}
+			.count {
+				overflow: hidden;
+				color: @white;
+				font-size: 20px;
+			}
+
+		}
+		.event:hover {
+			background-color: darken(@gray-dark, 5%);
+		}
+	}
+}
+
+// LOW STOCK
+#dashboard {
+	.low-stock {
+
+		.card-title i {
+			font-size: 25px;
+			color: @color;
+		}
+
+		input {
+			width: 60px;
+		}
+		td i {
+			font-size: 16px;
+			margin-left: 7px;
+			vertical-align: sub;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+#login.intro-card
+  .row.logo
+    .col-xs-12.text-center
+      img.img-responsive(src='img/logo.png')
+  .clear-s
+  .row
+    .col-xs-12.text-center
+      h4 Bienvenido a Genvox, ingresa tu email y contraseña para continuar.
+  .clear-m
+  .row
+    .col-xs-12.text-center
+      .input-group
+        span.input-group-addon
+          i.zmdi.zmdi-email
+        input.form-control(type='text', placeholder='E-mail' ng-model="user.username")
+      .clear-s
+      .input-group
+        span.input-group-addon
+          i.zmdi.zmdi-shield-check
+        input.form-control(type='password', placeholder='Contraseña' ng-model="user.password")
+  .clear-s
+  .row
+    .col-xs-12.col-sm-6.text-left
+      .checkbox
+        label
+          input(type='checkbox', value='', checked='')
+          | 					Mantenerme conectado
+    .col-xs-12.col-sm-6.text-right
+      a(ng-click="go('forgot')") Olvide mi contraseña
+  .clear-m
+  .row
+    .col-xs-12.text-center
+      button.btn.btn-bold.btn-long(type='button' ng-click="signin(user.username, user.password)") Ingresar
+  .clear-s
+  .row
+    .col-xs-12.text-center.gray-soft
+      | -- ó --
+  .clear-s
+  .row
+    .col-xs-12.text-center
+      button.btn.btn-blue(type='button' ng-click="facebookSignin()") Ingresar con Facebook
+  .clear-m.divider
+  .row
+    .col-xs-12.text-center
+      a(ng-click="go('signup')") No tengo cuenta y quiero registrarme.

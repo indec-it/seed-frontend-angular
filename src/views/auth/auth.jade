@@ -1,0 +1,13 @@
+section#main
+  section#content
+    .container
+      .tab-content
+        #login-tab.tab-pane(ng-class="isActual('signin') ? 'active' : 'fade'" role='tabpanel')
+          div(ng-include='"views/auth/signin.html"')
+        #signup-tab.tab-pane.fade(ng-class="isActual('signup') ? 'active' : 'fade'" role='tabpanel')
+          div(ng-include='"views/auth/signup.html"')
+        #signup-email-tab.tab-pane.fade(ng-class="isActual('signup-email') ? 'active' : 'fade'" role='tabpanel')
+          div(ng-include='"views/auth/signup-email.html"')
+        #forget-password-tab.tab-pane.fade(ng-class="isActual('forgot') ? 'active' : 'fade'" role='tabpanel')
+          div(ng-include='"views/auth/forgot-password.html"')
+footer(ng-include='"views/footer.html"')

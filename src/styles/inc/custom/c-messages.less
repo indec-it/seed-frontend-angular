@@ -1,0 +1,232 @@
+// MESSAGES
+#messages {
+
+	.card {
+		display: inline-block;
+		box-shadow: 0 1px 5px #eee;
+		border:1px solid #efefef;
+		width: 100%;
+		position: relative;
+	}
+	.m-sidebar {
+		width: 300px;
+		border-right: 1px solid #eee;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-body {
+		padding-left: 300px;
+		position: relative;
+		height: calc(100% - 40px);
+	}
+	header {
+		position: relative;
+		padding: 15px;
+	}
+	header li {
+		display: inline;
+	}
+	header .search i{
+		display: block;
+		font-size: 18px;
+		padding: 10px 15px;
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		width: 100%;
+		text-align: right;
+		color: @gray;
+	}
+	header .search i:hover{
+		color: @color;
+	}
+	li {
+		width: 100%;
+		padding: 0 1px;
+		margin: 0px;
+		list-style: none;
+		position: relative;
+	}
+	li:not(:nth-child(1)) {
+		border-top: 1px solid @gray-soft;
+	}
+	.m-sidebar a:hover {
+		background-color: @gray-soft;
+	}
+	.m-sidebar a.active {
+		background-color: @gray-soft;
+	}
+	.field {
+		list-style: none;
+		display: inline-block;
+		min-width: 100%;
+		padding: 15px 10px;
+		text-align: left;
+	}
+	.field:hover {
+		color: #555;
+	}
+	.user-img {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.user-img img{
+		width: 40px;
+		height: 40px;
+		vertical-align: sub;
+	}
+	.info {
+		display: inline-block;
+		vertical-align: super;
+	}
+	.info .name {
+		font-weight: 700;
+	}
+	.info .item {
+		color: #8E8E8E;
+	}
+	li .badge-counts {
+		font-style: normal;
+		background: #444;
+		padding: 1px 5px;
+		border-radius: 2px;
+		font-size: 10px;
+		line-height: 15px;
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		margin-top: 5px;
+		color: @white;
+	}
+	.m-list {
+		padding: 0px 20px;
+		height: 100%;
+		position: relative;
+	}
+	.m-list a.active .info .message{
+		color: @dark;
+	}
+	.m-body .user-img img {
+		border-radius: 50%;
+	}
+	.m-body .info .name {
+		color: @dark;
+	}
+	.m-body .info .message {
+		color: @gray;
+	}
+
+	// MESSAGE IN (chating screen)
+	.m-message header {
+		border-bottom: 1px solid @gray-soft;
+		padding: 10px 15px;
+	}
+	.m-message header .back a {
+	}
+	.m-message header .back {
+		position: absolute;
+		left: 0px;
+		top: 9px;
+	}
+	.m-message header .back i {
+		font-size: 25px;
+		padding: 5px 15px;
+		color: @gray;
+	}
+	.m-message header .back i:hover {
+		color: @color;
+	} 
+	.m-message header .user-img {
+		margin-left: 30px;
+	}
+	.m-message header .user-img img {
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+	}
+	.m-message header .name {
+		display: inline;
+		font-size: @font-medium;
+	}
+	.m-message header .actions {
+		display: inline;
+	}
+	.m-message header li {
+		width: 100%;
+		padding: 0 1px;
+		margin: 0px;
+		list-style: none;
+		position: relative;
+		position: inline-block;
+	}
+	.m-message header li i a {
+		height: 30px;
+	}
+	.m-message header li i {
+		font-size: 18px;
+		padding: 10px 15px;
+		color: @gray;
+	}
+	.m-message header li i:hover {
+		color:@color;
+	}
+	.mbl-compose {
+		border-top: 1px solid #eee;
+		height: 50px;
+		position: absolute;
+		bottom: 90px;
+		left: 0;
+		width: 100%;
+		padding: 15px 65px 15px 15px;
+	}
+	.mbl-compose textarea {
+		height: 40px;
+		width: 100%;
+		border-radius: 2px;
+		border: 0;
+		resize: none;
+		background: #eee;
+		padding: 10px 10px;
+		color: #5E5E5E;
+		-webkit-transition: background-color;
+		-o-transition: background-color;
+		transition: background-color;
+		-webkit-transition-duration: .3s;
+		transition-duration: .3s;
+	}
+	.mbl-compose button {
+		position: absolute;
+		top: 20px;
+		right: 15px;
+		background: 0 0;
+		border: 0;
+		font-size: 25px;
+	}
+	.mblm-item {
+		margin-top: 20px;
+	}
+	.mblm-item>div {
+		display: inline-block;
+		max-width: 70%;
+		padding: 15px 20px;
+		border-radius: 2px;
+	}
+	.mblm-item-left>div {
+		background-color: #eee;
+	}
+	.mblm-item small {
+		display: block;
+		color: #777;
+		padding: 5px 20px;
+	}
+	.mblm-item-right {
+		text-align: right;
+	}
+	.mblm-item-right>div {
+		background-color: #FFC107;
+		color: #fff;
+	}
+}

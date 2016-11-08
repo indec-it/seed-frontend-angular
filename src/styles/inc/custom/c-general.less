@@ -1,0 +1,140 @@
+#main {
+	padding-bottom: 5%;
+	padding-top: 100px;
+}
+
+
+// Fonts
+body {
+	font-family: @font-normal;
+	-webkit-font-smoothing: antialiased !important;
+}
+.font-small {
+	font-size: @font-small;
+}
+.font-medium {
+	font-size: @font-medium;
+}
+.font-xlarge {
+	font-size: @font-xlarge;
+}
+h1 {
+	font-size: @h1;
+}
+h2 {
+	font-size: @h2;
+}
+h3 {
+	font-size: @h3;
+}
+h4 {
+	font-size: @h4;
+}
+h5 {
+	font-size: @h5;
+}
+h6 {
+	font-size: @h6;
+}
+.help-block { // help font text
+	margin-bottom: 0px;
+}
+.help-block strong {
+	font-size: 13px;
+}
+
+// NORMALIZE
+a:hover {
+	text-decoration: none !important;
+}
+.checkbox {
+	margin: 0px;
+}
+* {
+	outline: none !important;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+table a.color {
+	color: @color-second;
+}
+
+// COLOURS
+.white {
+	color: @white;
+}
+.gray-soft {
+	color: @gray;
+}
+.color {
+	color: @color;
+}
+.color-second {
+	color: @color-second;
+}
+.dark {
+	color: @dark;
+}
+.bkg-gray-soft {
+	background-color: @gray-soft;
+}
+.bkg-gray-dark {
+	background-color: @gray-dark;
+}
+.bkg-dark {
+	background-color: @dark;
+}
+.bkg-color {
+	background-color: @color;
+}
+.bkg-color-second {
+	background-color: @color-second;
+}
+.input-group-addon {
+	background-color: @gray-soft;
+}
+
+
+// SPACES CLEAR
+.clear-s {
+	padding-bottom: @clear-s;
+}
+.clear-m {
+	padding-bottom: @clear-m;
+}
+.clear-l {
+	padding-bottom: @clear-l;
+}
+.divider {
+	border-bottom: 1px dotted #bebebe;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+
+.modal-open {
+	padding-right: 0px !important;
+}
+
+
+@media (min-width: @responsive-width) {
+	#content:not(.content-alt) {
+		padding-left: 283px;
+		padding-right: 15px;
+	}
+	.container {
+		width: 100%;
+	}
+}
+@media (max-width: @responsive-width) {
+	.visible-btn-block {
+		display: block !important;
+	}
+	.hidden-btn-block {
+		display: none !important;
+	}
+}
+

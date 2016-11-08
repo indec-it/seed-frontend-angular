@@ -1,0 +1,123 @@
+// SIDEBAR
+#sidebar {
+    width: 268px;
+
+    &.sidebar {
+        position: fixed;
+        background: #fff;
+        height: 100%;
+        top: 65px;
+        -webkit-transition: all;
+        -o-transition: all;
+        transition: all;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        z-index: 10;
+        overflow-y: auto;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        background: url(../img/profile-menu.png);
+    }
+
+    .profile .pic {
+        padding: 15px;
+    }
+    .profile .pic > img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 3px solid rgba(0, 0, 0, 0.14);
+        box-sizing: content-box;
+    }
+    .profile .info {
+        background: rgba(0, 0, 0, 0.37);
+        padding: 7px 14px;
+        color: #fff;
+        margin-top: 20px;
+        position: relative;
+    }
+    .profile .info i {
+        font-size: 19px;
+        line-height: 100%;
+        position: absolute;
+        right: 15px;
+        top: 7px;
+        -webkit-transition: all;
+        -o-transition: all;
+        transition: all;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+    }
+    .main-menu {
+        list-style: none;
+        padding-left: 0;
+        margin: 20px 0 0 0;
+    }
+    .main-menu > li > a {
+        padding: 14px 20px 14px 65px;
+        display: block;
+        font-weight: 600;
+        position: relative;
+        color: #fff;
+        font-size: 13px;
+    }
+    .main-menu a {
+        -webkit-transition: color;
+        -o-transition: color;
+        transition: color;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+    }
+    .main-menu > li > a > i {
+        position: absolute;
+        left: 25px;
+        font-size: 20px;
+        top: 0;
+        width: 25px;
+        text-align: center;
+        padding: 13px 0;
+    }
+    .main-menu > li > a:hover, .main-menu > li.active > a {
+        background-color: #F4F4F4;
+    }
+    .main-menu a:hover, .main-menu .active > a, .main-menu a.active {
+        color: #262626;
+    }
+    .sub-menu ul {
+        list-style: none;
+        display: none;
+        padding: 0;
+    }
+    .sub-menu ul > li:first-child > a {
+        padding-top: 14px;
+    }
+    .sub-menu ul > li > a {
+        padding: 8px 20px 8px 65px;
+        font-weight: 500;
+        display: block;
+        color: #bfbfbf;
+    }
+    .sub-menu ul li a:hover {
+        color: #fff;
+    }
+}
+
+
+// ANIMATION
+.profile.toggled .info i { //main-menu arrow 
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media (max-width: @responsive-width) { //sidebar slide
+    #sidebar {
+        -webkit-transform: translate3d(-288px, 0, 0);
+        transform: translate3d(-288px, 0, 0);
+        box-shadow: 0 0 20px rgba(14, 18, 21, 0.38);
+    }
+    #sidebar.toggled {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

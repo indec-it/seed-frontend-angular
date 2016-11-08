@@ -1,0 +1,23 @@
+section#content
+  #myAccount.container
+    .row
+      .col-xs-12
+        h3 Mi Cuenta
+        p Aqui puedes editar la informacion de tu cuenta
+    .clear-m
+    .card
+      .row
+        .col-xs-12.name
+          .info(ng-if="!editingName")
+            h4 {{user.firstName}}
+            a(href='' ng-click="toggle('Name')") Cambiar
+          .actions(ng-if="editingName")
+            h5
+              input.form-control(type='text', placeholder='' ng-model="user.firstName")
+            a(href='' ng-click="update('Name')") Guardar
+          .title.calification
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+      .clear-m

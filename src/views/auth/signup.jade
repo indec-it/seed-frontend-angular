@@ -1,0 +1,20 @@
+#signup.intro-card
+  .row.logo
+    .col-xs-12.text-center
+      img.img-responsive(src='img/logo.png')
+  .row
+    .col-xs-12.text-center
+      h5
+        | Registrate para comenzar a utilizar Genvox.
+  .clear-m
+  .row
+    .col-xs-12.text-center
+      button.btn.btn-bold(type='button' ng-click="go('signup-email')") Crear Cuenta con tu E-mail
+  .clear-s
+  .row
+    .col-xs-12.text-center
+      button.btn.btn-blue(type='button' ng-click="facebookSignin()") Ingresar con Facebook
+  .clear-m.divider
+  .row
+    .col-xs-12.text-center
+      a(ng-click="go('signin')") Ya tengo cuenta!

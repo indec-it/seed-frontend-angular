@@ -1,0 +1,40 @@
+// FOOTER
+#footer {
+    text-align: center;
+    width: 100%;
+    height: 110px;
+    color: #ff006c;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 12px;
+
+    .menu {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        margin-left: -5px;
+        margin-top: 8px;
+    }
+
+    .menu > li {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .menu > li > a {
+        color: #a2a2a2;
+    }
+}
+
+@media (min-width: @responsive-width) {
+    #footer {
+        padding-left: 283px;
+        padding-right: 15px;
+    }
+    .intro #footer { // FOOTER WHEN SIGN UP SCREEN
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+}

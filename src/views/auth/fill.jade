@@ -1,0 +1,68 @@
+section#main
+  section#content
+    .container
+      #signup.intro-card
+        .row.logo
+          .col-xs-12.text-center
+            img.img-responsive(src='img/logo.png')
+        .row
+          .col-xs-12.text-center
+            h4
+              | Registrate para comenzar a utilizar Genvox.
+        .clear-m
+        form(name='signupForm' novalidate ng-submit='submit(signupForm.$valid)')
+          .row
+            .col-xs-12.text-center
+              .input-group
+                span.input-group-addon
+                  i.zmdi.zmdi-account-add
+                input.form-control(
+                type='text'
+                placeholder='Nombre o Razon Social'
+                ng-model="user.firstName"
+                name='firstName'
+                ng-required='true'
+                ng-minlength='Validator.minName()'
+                ng-maxlength='Validator.maxName()')
+              .errors(ng-show="signupForm.firstName.$error.minlength")
+                | El nombre es muy corto
+              .errors(ng-show="signupForm.firstName.$error.maxlength")
+                | El nombre es muy largo
+              .clear-s
+              .input-group
+                span.input-group-addon
+                  i.zmdi.zmdi-account
+                input.form-control(
+                type='text'
+                name='lastName'
+                placeholder='Apellido (si corresponde)'
+                ng-model="user.lastName"
+                ng-minlength='Validator.minName()'
+                ng-maxlength='Validator.maxName()')
+              .errors(ng-show="signupForm.lastName.$error.minlength")
+                | El nombre es muy corto
+              .errors(ng-show="signupForm.lastName.$error.maxlength")
+                | El nombre es muy largo
+              .clear-s
+              .input-group
+                span.input-group-addon
+                  i.zmdi.zmdi-email
+                input.form-control(type='email', placeholder='E-mail' ng-model="user.email" name='email' ng-required='true')
+              .errors(ng-show="signupForm.email.$error.email")
+                | El email no es valido
+              .clear-s
+              .input-group
+                span.input-group-addon
+                  i.zmdi.zmdi-phone
+                input.form-control(type='text', placeholder='Telefono' ng-model="user.phone")
+              .clear-s
+              .input-group
+                span.input-group-addon
+                  i.zmdi.zmdi-pin
+                input.form-control(type='text', placeholder='Provincia' ng-model="user.city")
+              .clear-s
+            .clear-m
+          .row
+            .col-xs-12.text-center
+              button.btn.btn-bold.btn-long(type='submit' ng-disabled='!signupForm.$valid') Confirmar
+footer(ng-include='"views/footer.html"')

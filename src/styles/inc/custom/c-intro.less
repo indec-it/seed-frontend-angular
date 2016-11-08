@@ -1,0 +1,48 @@
+// INTRO - LOGIN - SIGNUP
+.intro {
+	background: url(../img/profile-menu.png);
+  height: 900px;
+	#main {
+		padding-bottom: 10px;
+		padding-top: 3%;
+	}
+	.intro-card {
+		background: #fff;
+		box-shadow: 0 1px 1px rgba(0,0,0,.15);
+		border-radius: 2px;
+		padding: 35px 55px;
+		max-width: 500px;
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+
+		.logo img {
+			margin:0 auto;
+		}
+	}
+
+	#content:not(.content-alt) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.errors {
+  margin-bottom: 9px;
+  font-size: 1rem;
+  color: @color-second;
+  padding-top: 5px;
+  display: block;
+  text-align: left;
+}
+
+form {
+  button{
+    &[type="submit"] {
+      &[disabled] {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+#modalGiveCalification.modalGiveCalification.fade.modalGiveCalification.in
+  .modal-content
+    button.btn.btn-link.waves-effect.close-btn(type='button', data-dismiss='modal')
+    i.zmdi.zmdi-close-circle-o
+    .info-first
+      img.pv-main(src='{{item.buyer.image}}', alt='')
+    .info-second
+      .name {{item.buyer.name}}
+      .location {{item.location}}
+      .calification
+        i.zmdi.zmdi-star
+        i.zmdi.zmdi-star
+        i.zmdi.zmdi-star
+        i.zmdi.zmdi-star
+      .description {{item.description}}
+      .title Precio Buscado: {{item.price}}
+      .title
+        strong Precio Acordado: {{item.final_price}}
+    .modal-footer
+      .title Califica a tu comprador:
+      .calification
+        input-stars(max='5'  icon-empty="zmdi zmdi-star-outline" icon-full='zmdi zmdi-star' ng-model='item.calification')
+      br
+      .title Deja un comentario:
+        textarea.form-control(type='text', aria-label='Amount', placeholder='Comentá como te fue')
+        br
+        button.btn.btn-bold.btn-long(type='button', data-dismiss='modal', ng-click='submit()') Enviar

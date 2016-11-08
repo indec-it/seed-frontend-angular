@@ -1,0 +1,41 @@
+doctype html
+html.no-js(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Genvox')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Genvox
+    link(rel='icon', href='images/favicon/favicon.ico')
+
+    // build:css styles/vendor.css
+    // bower:css
+    //- css bower dependencies, generated automatically
+    // endbower
+    // endbuild
+
+    link(rel='stylesheet', href='styles/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,900' rel='stylesheet' type='text/css')
+
+  body(ng-app='genvox')
+
+    //if lt IE 10
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+
+    <div ui-view></div>
+
+    // build:js scripts/vendor.js
+    // bower:js
+    //- javascript bower dependencies, generated automatically
+    // endbower
+    // endbuild
+
+    script(src='//cdn.auth0.com/w2/auth0-6.7.js')
+    script(src='//cdn.auth0.com/w2/auth0-angular-4.js')
+
+    script(type='text/javascript', src='scripts/main.js')
+
